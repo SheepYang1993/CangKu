@@ -1,4 +1,4 @@
-[submodule "external/SheepCommon"]
-	path = external/SheepCommon
+[submodule "externel/SheepCommon"]
+	path = externel/SheepCommon
 	url = https://github.com/SheepYang1993/SheepCommon.git
 	branch = master

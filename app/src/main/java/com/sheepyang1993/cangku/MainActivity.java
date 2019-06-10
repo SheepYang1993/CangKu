@@ -28,7 +28,7 @@ public class MainActivity extends CommMainTabActivity {
         setToolbarTitle(getString(R.string.fragment_one_title));
         List<Fragment> fragmentList = new ArrayList<>();
         fragmentList.add(BlankFragment.newInstance(getString(R.string.fragment_one_title), getString(R.string.fragment_one_content)));
-        fragmentList.add(BlankFragment.ncolor_tab_selectorewInstance(getString(R.string.fragment_two_title), getString(R.string.fragment_two_content)));
+        fragmentList.add(BlankFragment.newInstance(getString(R.string.fragment_two_title), getString(R.string.fragment_two_content)));
         fragmentList.add(BlankFragment.newInstance(getString(R.string.fragment_three_title), getString(R.string.fragment_three_content)));
         fragmentList.add(BlankFragment.newInstance(getString(R.string.fragment_four_title), getString(R.string.fragment_four_content)));
         return fragmentList;
