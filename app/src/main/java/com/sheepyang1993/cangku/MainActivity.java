@@ -13,17 +13,6 @@ import java.util.List;
 public class MainActivity extends CommMainTabActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-
-    @Override
-    protected void initData() {
-
-    }
-
-    @Override
     public List<Fragment> initFragment() {
         setToolbarTitle(getString(R.string.fragment_one_title));
         List<Fragment> fragmentList = new ArrayList<>();
@@ -32,5 +21,10 @@ public class MainActivity extends CommMainTabActivity {
         fragmentList.add(BlankFragment.newInstance(getString(R.string.fragment_three_title), getString(R.string.fragment_three_content)));
         fragmentList.add(BlankFragment.newInstance(getString(R.string.fragment_four_title), getString(R.string.fragment_four_content)));
         return fragmentList;
+    }
+
+    @Override
+    protected void initData() {
+
     }
 }

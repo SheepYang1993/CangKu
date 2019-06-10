@@ -1,11 +1,20 @@
 <resources>
 
+    <style name="BaseTheme" parent="QMUI.Compat">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="BaseTheme">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--通用界面样式-->
+    <style name="BaseActivityTheme" parent="BaseTheme">
+        <item name="android:screenOrientation">portrait</item>
+    </style>
 </resources>
