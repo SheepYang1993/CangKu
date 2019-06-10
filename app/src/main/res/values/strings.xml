@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CangKu</string>
+    <string name="fragment_one_title">库存</string>
+    <string name="fragment_two_title">入库</string>
+    <string name="fragment_three_title">出库</string>
+    <string name="fragment_four_title">我的</string>
+    <string name="fragment_one_content">库存页面</string>
+    <string name="fragment_two_content">入库页面</string>
+    <string name="fragment_three_content">出库页面</string>
+    <string name="fragment_four_content">我的页面</string>
+</resources>

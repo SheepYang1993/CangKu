@@ -1,0 +1,4 @@
+include ':app'
+
+include ':sheepcommon'
+project(':sheepcommon').projectDir = new File('externel/SheepCommon')
