@@ -1,7 +1,8 @@
-package com.sheepyang1993.cangku;
+package com.sheepyang1993.cangku.activity;
 
 import android.support.v4.app.Fragment;
 
+import com.sheepyang1993.cangku.R;
 import com.sheepyang1993.sheepcommon.activity.BaseTabActivity;
 import com.sheepyang1993.sheepcommon.fragment.BlankFragment;
 

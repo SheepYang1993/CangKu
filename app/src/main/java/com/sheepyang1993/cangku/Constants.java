@@ -9,4 +9,5 @@ package com.sheepyang1993.cangku;
 public class Constants {
     public static final String UMENG_APP_KEY = "5cfdbd794ca357fb350002cb";
     public static final String BUGLY_APP_ID = "f1db766ca8";
+    public static final String BMOB_APP_ID = "fd90215f12d8dce7504a4faa56fd6759";
 }

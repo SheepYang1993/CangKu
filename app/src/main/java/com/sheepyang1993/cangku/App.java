@@ -3,6 +3,7 @@ package com.sheepyang1993.cangku;
 import android.app.Application;
 
 import com.sheepyang1993.cangku.utils.ChannelUtil;
+import com.sheepyang1993.sheepbmob.SheepBmob;
 import com.sheepyang1993.sheepcommon.SheepCommon;
 
 /**
@@ -16,5 +17,6 @@ public class App extends Application {
         super.onCreate();
         SheepCommon.init(this, ChannelUtil.getChannel(),
                 Constants.BUGLY_APP_ID, Constants.UMENG_APP_KEY);
+        SheepBmob.init(this, Constants.BMOB_APP_ID);
     }
 }
