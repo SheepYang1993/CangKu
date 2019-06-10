@@ -1,16 +1,14 @@
 package com.sheepyang1993.cangku;
 
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
-import com.sheepyang1993.sheepcommon.activity.CommMainTabActivity;
+import com.sheepyang1993.sheepcommon.activity.BaseTabActivity;
 import com.sheepyang1993.sheepcommon.fragment.BlankFragment;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends CommMainTabActivity {
+public class MainActivity extends BaseTabActivity {
 
     @Override
     public List<Fragment> initFragment() {

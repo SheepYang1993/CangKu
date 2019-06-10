@@ -44,5 +44,5 @@ android {
 
 dependencies {
     //通用组件模块
-    implementation project(':sheepcommon')
+    implementation project(':SheepCommon')
 }
