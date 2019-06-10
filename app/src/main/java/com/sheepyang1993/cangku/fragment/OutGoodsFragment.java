@@ -1,5 +1,6 @@
 package com.sheepyang1993.cangku.fragment;
 
+import android.os.Bundle;
 import android.view.View;
 
 import com.sheepyang1993.cangku.R;
@@ -12,6 +13,14 @@ import com.sheepyang1993.sheepcommon.fragment.BaseFragment;
  * @describe 出库界面
  */
 public class OutGoodsFragment extends BaseFragment {
+
+    public static OutGoodsFragment newInstance(String title) {
+        Bundle args = new Bundle();
+        args.putString(EXTRA_TITLE, title);
+        OutGoodsFragment fragment = new OutGoodsFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
 
     @Override
     public int getLayoutId() {

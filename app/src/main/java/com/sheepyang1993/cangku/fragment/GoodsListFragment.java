@@ -10,21 +10,21 @@ import com.sheepyang1993.sheepcommon.fragment.BaseFragment;
  * @author SheepYang
  * @email 332594623@qq.com
  * @date 2019/6/10 15:30
- * @describe 入库界面
+ * @describe 库存列表界面
  */
-public class EnterGoodsFragment extends BaseFragment {
+public class GoodsListFragment extends BaseFragment {
 
-    public static EnterGoodsFragment newInstance(String title) {
+    public static GoodsListFragment newInstance(String title) {
         Bundle args = new Bundle();
         args.putString(EXTRA_TITLE, title);
-        EnterGoodsFragment fragment = new EnterGoodsFragment();
+        GoodsListFragment fragment = new GoodsListFragment();
         fragment.setArguments(args);
         return fragment;
     }
 
     @Override
     public int getLayoutId() {
-        return R.layout.fragment_enter_goods;
+        return R.layout.fragment_goods_list;
     }
 
     @Override
