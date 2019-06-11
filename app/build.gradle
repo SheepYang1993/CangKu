@@ -47,6 +47,6 @@ android {
 dependencies {
     //通用组件模块
     implementation project(':SheepCommon')
-    //bmob数据服务模块
-    implementation project(':SheepBmob')
+    //bmob仓库数据服务模块
+    implementation project(':SheepBmobCangKu')
 }

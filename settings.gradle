@@ -1,4 +1,4 @@
-include ':app', ':SheepBmob'
+include ':app'
 
 //通用模块
 include ':SheepCommon'
@@ -7,3 +7,7 @@ project(':SheepCommon').projectDir = new File('externel/SheepCommon')
 //bmob数据服务模块
 include ':SheepBmob'
 project(':SheepBmob').projectDir = new File('externel/SheepBmob')
+
+//bmob仓库数据服务模块
+include ':SheepBmobCangKu'
+project(':SheepBmobCangKu').projectDir = new File('externel/SheepBmobCangKu')

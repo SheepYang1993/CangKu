@@ -2,7 +2,9 @@ package com.sheepyang1993.cangku.fragment;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
+import com.sheepyang1993.cangku.EditGoodsDialog;
 import com.sheepyang1993.cangku.R;
 import com.sheepyang1993.sheepcommon.fragment.BaseFragment;
 
@@ -13,6 +15,8 @@ import com.sheepyang1993.sheepcommon.fragment.BaseFragment;
  * @describe 入库界面
  */
 public class EnterGoodsFragment extends BaseFragment {
+
+    private Button btnEnterGoods;
 
     public static EnterGoodsFragment newInstance(String title) {
         Bundle args = new Bundle();
@@ -29,7 +33,11 @@ public class EnterGoodsFragment extends BaseFragment {
 
     @Override
     protected void initView(View view) {
-
+        btnEnterGoods = view.findViewById(R.id.btnEnterGoods);
+        btnEnterGoods.setOnClickListener(v -> {
+            EditGoodsDialog dialog = new EditGoodsDialog(getActivity());
+            dialog.show();
+        });
     }
 
     @Override
