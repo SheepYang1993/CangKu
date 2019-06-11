@@ -6,3 +6,7 @@
 	path = externel/SheepBmob
 	url = https://github.com/SheepYang1993/SheepBmob.git
     branch = master
+[submodule "externel/SheepBmobCangKu"]
+	path = externel/SheepBmobCangKu
+	url = https://github.com/SheepYang1993/SheepBmobCangKu.git
+    branch = master

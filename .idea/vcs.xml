@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/externel/SheepBmob" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/externel/SheepBmobCangKu" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/externel/SheepCommon" vcs="Git" />
   </component>
 </project>
