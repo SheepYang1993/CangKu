@@ -59,12 +59,22 @@ public class EnterGoodsFragment extends BaseFragment {
             list.add(goods2);
             GoodsApiHelper.addGoods(list, new Callback() {
                 @Override
+                public void onStart() {
+
+                }
+
+                @Override
                 public void onSuccess(Object data) {
 
                 }
 
                 @Override
                 public void onError() {
+
+                }
+
+                @Override
+                public void onFinish() {
 
                 }
             });
