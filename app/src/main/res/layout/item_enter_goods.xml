@@ -5,21 +5,17 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/CommonC03"/>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/tvPostion"
             android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="序号"/>
+            android:hint="序号"/>
 
         <View
             android:layout_width="1dp"
@@ -27,11 +23,12 @@
             android:background="@color/CommonC03"/>
 
         <TextView
+            android:id="@+id/tvModelId"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="型号"/>
+            android:hint="型号"/>
 
         <View
             android:layout_width="1dp"
@@ -39,11 +36,12 @@
             android:background="@color/CommonC03"/>
 
         <TextView
+            android:id="@+id/tvColor"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="颜色"/>
+            android:hint="颜色"/>
 
         <View
             android:layout_width="1dp"
@@ -51,11 +49,12 @@
             android:background="@color/CommonC03"/>
 
         <TextView
+            android:id="@+id/tvSize"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="尺寸"/>
+            android:hint="尺寸"/>
 
         <View
             android:layout_width="1dp"
@@ -63,15 +62,31 @@
             android:background="@color/CommonC03"/>
 
         <TextView
+            android:id="@+id/tvNumber"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="数量"/>
+            android:hint="库存"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/CommonC03"/>
+
+        <TextView
+            android:id="@+id/tvAppend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="备注"/>
+
     </LinearLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/CommonC03"/>
+
 </LinearLayout>

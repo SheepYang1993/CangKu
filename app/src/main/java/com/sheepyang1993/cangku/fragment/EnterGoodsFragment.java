@@ -4,16 +4,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.sheepyang1993.cangku.EditGoodsDialog;
+import com.sheepyang1993.cangku.widget.EnterGoodsDialog;
 import com.sheepyang1993.cangku.R;
+import com.sheepyang1993.sheepcommon.debug.DebugUtils;
 import com.sheepyang1993.sheepcommon.fragment.BaseFragment;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import comsheepyang1993.sheepbmobcangku.api.GoodsApiHelper;
-import comsheepyang1993.sheepbmobcangku.callback.Callback;
-import comsheepyang1993.sheepbmobcangku.model.GoodsModel;
 
 /**
  * @author SheepYang
@@ -23,7 +17,7 @@ import comsheepyang1993.sheepbmobcangku.model.GoodsModel;
  */
 public class EnterGoodsFragment extends BaseFragment {
 
-    private Button btnEnterGoods;
+    private Button btnEnterGoods, btnDebug;
 
     public static EnterGoodsFragment newInstance(String title) {
         Bundle args = new Bundle();
@@ -40,44 +34,16 @@ public class EnterGoodsFragment extends BaseFragment {
 
     @Override
     protected void initView(View view) {
+        btnDebug = view.findViewById(R.id.btnDebug);
         btnEnterGoods = view.findViewById(R.id.btnEnterGoods);
         btnEnterGoods.setOnClickListener(v -> {
-            EditGoodsDialog dialog = new EditGoodsDialog(getActivity());
+            EnterGoodsDialog dialog = new EnterGoodsDialog(getActivity());
             dialog.show();
-            List<GoodsModel> list = new ArrayList<>();
-            GoodsModel goods = new GoodsModel();
-            goods.setModelId("9058");
-            goods.setNumber(45);
-            goods.setSize("42.5");
-            goods.setColor("灰橘");
-            list.add(goods);
-            GoodsModel goods2 = new GoodsModel();
-            goods2.setModelId("9067");
-            goods2.setNumber(32);
-            goods2.setSize("44");
-            goods2.setColor("红黑");
-            list.add(goods2);
-            GoodsApiHelper.addGoods(list, new Callback() {
-                @Override
-                public void onStart() {
-
-                }
-
-                @Override
-                public void onSuccess(Object data) {
-
-                }
-
-                @Override
-                public void onError() {
-
-                }
-
-                @Override
-                public void onFinish() {
-
-                }
-            });
+        });
+        btnDebug.setText(DebugUtils.isShowDebugInfo() ? "调试模式(已开启)" : "调试模式(已关闭)");
+        btnDebug.setOnClickListener(v -> {
+            DebugUtils.setShowDebugInfo(!DebugUtils.isShowDebugInfo());
+            btnDebug.setText(DebugUtils.isShowDebugInfo() ? "调试模式(已开启)" : "调试模式(已关闭)");
         });
     }
 
