@@ -10,6 +10,7 @@ import android.widget.Button;
 import com.sheepyang1993.cangku.R;
 import com.sheepyang1993.cangku.adapter.GoodsAdapter;
 import com.sheepyang1993.sheepcommon.fragment.BaseFragment;
+import com.sheepyang1993.sheepcommon.utils.DialogUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -69,6 +70,7 @@ public class GoodsListFragment extends BaseFragment {
             @Override
             public void onStart() {
                 refreshLayout.setRefreshing(true);
+                DialogUtil.showLoadingDialog(getActivity(), "正在刷新库存...");
             }
 
             @Override
@@ -84,6 +86,7 @@ public class GoodsListFragment extends BaseFragment {
             @Override
             public void onFinish() {
                 refreshLayout.setRefreshing(false);
+                DialogUtil.showToastSuccessDialog(getActivity(), "刷新成功");
             }
         });
     }
